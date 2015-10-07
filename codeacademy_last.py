@@ -193,15 +193,51 @@ def grades_average(grades):
 
  
 ###############################################
+## List comprehension
 
+evens_to_50 = [i for i in range(51) if i % 2 == 0]
+print evens_to_50
  
+doubles_by_3 = [x*2 for x in range(1,6) if (x*2) % 3 == 0]
+
+even_squares = [x**2 for x in range(1,11) if x % 2 ==0]
+print even_squares
+ 
+###############################################
+squares = [x**2 for x in range(1,11)]
+print filter(lambda x: 30<=x<=70,squares)
+ 
+ 
+cubes = [x**3 for x in range(1, 11)]
+filter(lambda x: x % 3 == 0, cubes) 
 ###############################################
 
  
 ###############################################
 
- 
-###############################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 ###############################################
