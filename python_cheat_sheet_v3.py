@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #===========================================================
 # running a python program/notes
 #===========================================================
@@ -24,7 +25,7 @@ import sys,os                           # import system details in order to e.g.
 import numpy as np
 import scipy as sp                      # must import system last, allows you to change directories within the script
 import matplotlib.pyplot as plt         # pyplot most commonly used
-import sys,os                           # allows you to stop…sys.exit ()  ;equivlene t to idl stop              
+import sys,os                           # allows you to stop…sys.exit()  ;equivlene t to idl stop              
 
 #===========================================================
 # commenting and strings
