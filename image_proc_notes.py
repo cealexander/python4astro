@@ -7,6 +7,8 @@ fname='/Users/cealexan/Documents/work/projects/NRLvsOBS/aia.lev1.171A_2010-12-11
 data=fits.open(fname)
 image = data[0].data
 
+#other way to do it
+image=fits.getdata(fname)
 plt.imshow(image, cmap=plt.cm.ocean)        
 
 
