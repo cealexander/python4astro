@@ -38,6 +38,8 @@ print    # prints an empty line
 print "Hello"
 print 'hello'                                                # print strings using either " or '. Be consistent.
 print 'Simulation no. \t Temperature \t Density'             #\t will put a tab in to nicely space things out.
+print 'Let\'s start the party'                               # you need a backshlash before apostrophes in text
+
 
 # get string info
 my_string = "Hello you!"
