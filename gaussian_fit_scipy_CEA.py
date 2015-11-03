@@ -2,13 +2,18 @@ import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 from datetime import datetime
+import sys,os 
 
-
+font = {'family': 'serif',
+        'color':  'darkred',
+        'weight': 'normal',
+        'size': 16,
+        }
 
 
 def gaussian(x, amp, mu, sigma):
 
-    return amp*np.exp(-(x-mu)**2/2.0*sigma**2)
+    return amp*np.exp(-(x-mu)**2/(2.0*sigma**2))
     
     
 
@@ -42,18 +47,35 @@ if __name__ == '__main__':
     
     # Compute fit with parameters
     G = gaussian(X, coeff[0], coeff[1], coeff[2])
+    FWHM=2.35*coeff[2]
     
     
     # Plot data with fit
     plt.figure()
-    plt.plot(X, data, color = 'purple', label = 'Noisy data')
+    #plt.plot(X, data, color = 'purple', label = 'Noisy data')
     plt.plot(X, G, color = 'cyan', label = 'Fit')
     plt.xlabel('Some points along X', fontsize = 16)
     plt.ylabel('Data', fontsize = 16)
     plt.title(r'Gaussian fit with SciPy', fontsize = 16)  
     plt.legend(loc = 2, frameon = False)
+    plt.text(10,750,'FWHM = '+ str(round(FWHM,2)), fontdict=font)
     plt.grid(True)
     plt.show()
+    
+    sys.exit()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -62,6 +84,7 @@ if __name__ == '__main__':
     
     # Compute fit with parameters
     G = gaussian(X, coeff[0], coeff[1], coeff[2])
+    FWHM=2.35*coeff[2]
     
     # Plot data with fit
     plt.figure()
@@ -71,10 +94,15 @@ if __name__ == '__main__':
     plt.ylabel('Data', fontsize = 16)
     plt.title(r'Gaussian fit with SciPy', fontsize = 16)  
     plt.legend(loc = 2, frameon = False)
+    
     plt.grid(True)
     plt.show()
+    #plt.close('all')
     
     
+    
+    
+    sys.exit()
     #######################
     
     hic1=hic[10:25]

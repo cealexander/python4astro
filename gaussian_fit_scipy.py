@@ -8,7 +8,7 @@ from datetime import datetime
 
 def gaussian(x, amp, mu, sigma):
 
-    return amp*np.exp(-(x-mu)**2/2.0*sigma**2)
+    return amp*np.exp(-(x-mu)**2/(2.0*sigma**2))
     
     
 
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     
     # Compute fit with parameters
     G = gaussian(X, coeff[0], coeff[1], coeff[2])
-    
+    FWHM=2.35*coeff[2]
     
     # Plot data with fit
     plt.figure()
@@ -45,6 +45,7 @@ if __name__ == '__main__':
     plt.ylabel('Data', fontsize = 16)
     plt.title(r'Gaussian fit with SciPy', fontsize = 16)  
     plt.legend(loc = 2, frameon = False)
+    plt.text(0,-0.5,'FWHM = '+ str(round(FWHM,2)))
     plt.grid(True)
     plt.show()
     
