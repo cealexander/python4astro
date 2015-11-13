@@ -47,14 +47,14 @@ c2=min(time, key=lambda x:abs(x-tmax))
 cut1=np.where(time == c1)
 cut2=np.where(time == c2)
     
-plt.fill(logte,tr94, facecolor='lime',edgecolor='lime')
-plt.xlim(5.,7.5)
+#plt.fill(logte,tr94, facecolor='lime',edgecolor='lime')
+#plt.xlim(5.,7.5)
 
-plt.figure(figsize=(15/2,23/2), dpi=80)                 
-plt.fill(10.**logte,tr94, facecolor='lime',edgecolor='lime')
-plt.xlim(10.**5.,10.**7.3)
-plt.xticks(np.arange(10.**5,10.**7.3,2e6))                            
-plt.ticklabel_format(style='sci', axis='x', scilimits=(0,0), useOFFset=True)                                                       
+#plt.figure(figsize=(15/2,23/2), dpi=80)                 
+#plt.fill(10.**logte,tr94, facecolor='lime',edgecolor='lime')
+#plt.xlim(10.**5.,10.**7.3)
+#plt.xticks(np.arange(10.**5,10.**7.3,2e6))                            
+#plt.ticklabel_format(style='sci', axis='x', scilimits=(0,0), useOFFset=True)                                                       
                                                                                     
                                                                                                                                           
 plt.figure(figsize=(15/2,23/2), dpi=80)  
