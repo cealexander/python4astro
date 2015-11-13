@@ -43,7 +43,7 @@ if __name__ == '__main__':
     plt.plot(X, G, color = 'cyan', label = 'Fit')
     plt.xlabel('Some points along X', fontsize = 16)
     plt.ylabel('Data', fontsize = 16)
-    plt.title(r'Gaussian fit with SciPy', fontsize = 16)  
+    plt.title(r'Gaussian fit with SciPy $\alpha$', fontsize = 16)  
     plt.legend(loc = 2, frameon = False)
     plt.text(0,-0.5,'FWHM = '+ str(round(FWHM,2)))
     plt.grid(True)

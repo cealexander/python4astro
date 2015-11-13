@@ -2,6 +2,8 @@
 # Imports
 import numpy as np
 import matplotlib.pyplot as plt
+import pdb
+
 
 # Create a new figure of size 8x6 points, using 100 dots per inch
 plt.figure(figsize=(23/2,15/2), dpi=80)
@@ -28,6 +30,8 @@ plt.scatter(100,360, s=100, color ='black', marker='^')
 
 plt.scatter(200,390, s=200, color ='black',marker='*',facecolors='none', edgecolors='black')
 plt.scatter(200,630, s=100, color ='black', marker='^',facecolors='none', edgecolors='black')
+pdb.set_trace()
+
 
 plt.scatter(300,660, s=200, color ='black',marker='*',facecolors='none', edgecolors='black')
 plt.scatter(300,810, s=100, color ='black', marker='^',facecolors='none', edgecolors='black')

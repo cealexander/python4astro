@@ -52,7 +52,7 @@ if __name__ == '__main__':
     
     # Plot data with fit
     plt.figure()
-    #plt.plot(X, data, color = 'purple', label = 'Noisy data')
+    plt.plot(X, data, color = 'purple', label = 'Noisy data')
     plt.plot(X, G, color = 'cyan', label = 'Fit')
     plt.xlabel('Some points along X', fontsize = 16)
     plt.ylabel('Data', fontsize = 16)
@@ -102,7 +102,7 @@ if __name__ == '__main__':
     
     
     
-    sys.exit()
+    #sys.exit()
     #######################
     
     hic1=hic[10:25]
