@@ -73,3 +73,15 @@ ffmpeg
 # how to quickly close all windows   plt.close('all')
 
 # how to pause programs
+
+
+
+
+
+
+
+
+# next time - fits files
+
+# use different types of compression, level 0
+

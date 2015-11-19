@@ -14,7 +14,7 @@ import sys #only needed to determine Python version number
 
 # Enable inline plotting
 %matplotlib inline
-
+#%matplotlib qt
 print 'Python version ' + sys.version
 print 'Pandas version ' + pd.__version__
 
