@@ -23,6 +23,10 @@ smooth_hic12 = convolve(hic, Box1DKernel(12))
 
 
 
+#def smooth(data, width):
+#return convolve(data,Box1DKernel(width))
+
+
 
 #smooth_aia = convolve(aia, Box1DKernel(11))
 
