@@ -35,15 +35,6 @@ sflux = boxcar(data, (100,)) # smooth flux array
 
 
 
-def smooth1D(image,width=2,axis=0,decimate=False):
-    data=convolve1d(image,np.ones((width,))/width,mode='wrap',axis=axis)
-    
-    if decimate:
-        data=boxdec1D(data,width=width,axis=axis)
-        return data
-        
-
-
 
 
 
