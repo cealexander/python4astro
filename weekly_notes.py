@@ -84,4 +84,17 @@ ffmpeg
 # next time - fits files
 
 # use different types of compression, level 0
+# cubes!
+# practice pickling things!
+# pandas
+
+
+
+
+# Group Project!!!
+# make a list of functions that are useful for IDL equivalent functions
+
+
+
+
 
