@@ -95,6 +95,10 @@ ffmpeg
 # make a list of functions that are useful for IDL equivalent functions
 
 
+# for Jan 22
+# debugging
+# line continuation - done
+# Mitzi will send round temperature data + notes for opening. TASK: look over, make graphs :)
 
-
-
+print 'hello \
+steve'
