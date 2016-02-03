@@ -444,3 +444,5 @@ for file in filenames:
 pyArt - look up
 pyplot?
 
+
+os.path exist? look up
